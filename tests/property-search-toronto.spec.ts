@@ -17,11 +17,11 @@ test('Toronto property search', async ({ page }) => {
   const listingCards = page.locator('.listingCard');
   await expect(listingCards.first()).toBeVisible();
 
-  // Get the first listing's title
-  const firstListingTitle = page.locator('.listingCard h2').first();
-  await expect(firstListingTitle).toBeVisible();
+  // Get the first listing's address
+  const firstListingAddress = page.locator('#listInnerCon div.listingCardAddress').first();
+  await expect(firstListingAddress).toBeVisible();
   
-  // Assert that the title contains either "Toronto" or "ON"
-  const titleText = await firstListingTitle.textContent();
-  expect(titleText?.includes('Toronto') || titleText?.includes('ON')).toBeTruthy();
+  // Assert that the address contains either "Toronto" or "ON"
+  const addressText = await firstListingAddress.textContent();
+  expect(addressText?.includes('Toronto') || addressText?.includes('ON')).toBeTruthy();
 });
