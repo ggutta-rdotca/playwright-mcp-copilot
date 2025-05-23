@@ -1,0 +1,22 @@
+{
+  "name": "playwright-mcp-copilot",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @ggutta-rdotca\r - 👀 I’m interested in AI based projects\r - 🌱 I’m currently learning Playwright MCP\r - 💞️ I’m looking to collaborate on MCP Server and AI Agents",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggutta-rdotca/playwright-mcp-copilot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggutta-rdotca/playwright-mcp-copilot/issues"
+  },
+  "homepage": "https://github.com/ggutta-rdotca/playwright-mcp-copilot#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.21"
+  }
+}
